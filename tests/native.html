@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="es" data-mock-pip="false">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prueba PiP nativo</title>
+  <style>
+    body { font: 16px system-ui, sans-serif; margin: 24px; }
+    [aria-current="true"] { font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h1>Prueba de Document PiP real</h1>
+  <p>Almacenamiento simulado, API PiP nativa. Pulsa Letras PiP.</p>
+  <div data-testid="lyrics-container">
+    <div data-testid="fullscreen-lyric">Texto sintetico anterior</div>
+    <div data-testid="fullscreen-lyric" aria-current="true">Texto sintetico actual</div>
+    <div data-testid="fullscreen-lyric">Texto sintetico siguiente</div>
+  </div>
+  <script src="mock.js"></script>
+  <script src="../lyrics.js"></script>
+  <script src="../content.js"></script>
+</body>
+</html>

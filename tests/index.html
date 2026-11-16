@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pruebas Spotify Lyrics PiP</title>
+  <style>
+    body { font: 15px system-ui, sans-serif; margin: 24px; background: #eee; color: #111; }
+    #fixture { padding: 12px; background: #fff; max-width: 400px; }
+    #results { white-space: pre-wrap; }
+    iframe { width: 360px; height: 190px; border: 1px solid #777; }
+  </style>
+</head>
+<body>
+  <h1>Pruebas locales</h1>
+  <p>Solo texto sintetico. PiP y almacenamiento simulados.</p>
+  <div id="fixture"></div>
+  <pre id="results">Ejecutando...</pre>
+  <script src="mock.js"></script>
+  <script src="../background.js"></script>
+  <script src="../lyrics.js"></script>
+  <script src="../content.js"></script>
+  <script src="tests.js"></script>
+</body>
+</html>

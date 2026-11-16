@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Spotify Lyrics PiP",
+  "version": "1.0.17",
+  "description": "Display Spotify's visible lyrics in a customizable floating window.",
+  "minimum_chrome_version": "116",
+  "permissions": ["storage"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Show the Lyrics PiP control in Spotify"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://open.spotify.com/*"],
+      "js": ["lyrics.js", "content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
